@@ -7,8 +7,8 @@
     <ProjectGuid>{9823A7EF-3BA9-4B90-9F40-6E9806161B8A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>HeaderTableLayoutPanel</RootNamespace>
-    <AssemblyName>HeaderTableLayoutPanel</AssemblyName>
+    <RootNamespace>CBComponents</RootNamespace>
+    <AssemblyName>CBComponents.HeaderTableLayoutPanel</AssemblyName>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
