@@ -24,7 +24,7 @@ namespace CBComponents
       }
     }
 
-    [Browsable(true), DefaultValue(true)]
+    [Browsable(true), DefaultValue(false)]
     public bool IsHighlightText
     {
       get { return this.isHighlightText; }
@@ -35,7 +35,7 @@ namespace CBComponents
         Invalidate();
       }
     }
-    private bool isHighlightText = true;
+    private bool isHighlightText = false;
 
 
     private int textHeight; // storing the Height value of Text for caching
