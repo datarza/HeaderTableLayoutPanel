@@ -8,7 +8,7 @@ using System.Windows.Forms;
 using System.Drawing.Drawing2D; 
 using System.Runtime.InteropServices;
 
-namespace Octopus.Components
+namespace CanadianBeaver.Components
 {
   public partial class HeaderTableLayoutPanel : System.Windows.Forms.TableLayoutPanel
   {
