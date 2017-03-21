@@ -7,15 +7,15 @@ This is WinForms highlighted header control based on TableLayoutPanel
 
 ## Problem
 
-There are a lot of panels for grouping the controls in WinForms. The best one of them is TableLayoutPanel. Unfortunately, this panel does not show the Header.
+There are a lot of panels for grouping the controls in WinForms. The best one of them is _TableLayoutPanel_. Unfortunately, this panel does not show the header.
 
 ## Solution
 
-It can be solved by GroupBox and TableLayoutPanel. This solution is easy, but I prefer to make inherited panel from TableLayoutPanel.
+It can be solved by _GroupBox_ and _TableLayoutPanel_. This solution is easy, but I prefer to make inherited panel from _TableLayoutPanel_.
 
 ## How It Works
 
-The HeaderTableLayoutPanel implements the IsHighlightText property and overrides the few properties like Text, DisplayRectangle and SizeFromClientSize. Also, the HeaderTableLayoutPanel overrides the OnPaint and OnFontChanged methods.
+The _HeaderTableLayoutPanel_ implements the _IsHighlightText_ property and overrides the few properties like _Text_, _DisplayRectangle_ and _SizeFromClientSize_. Also, the _HeaderTableLayoutPanel_ overrides the _OnPaint_ and _OnFontChanged_ methods.
 
 
 
