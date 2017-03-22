@@ -2,7 +2,7 @@
 
 This is WinForms highlighted header control based on TableLayoutPanel
 
-![Demonstrative image](img_01.png "Demonstrative image")
+![Demonstrative image](img_01.png "Demonstrative image") ![Demonstrative image](img_02.png "Demonstrative image")
 
 
 ## Problem
