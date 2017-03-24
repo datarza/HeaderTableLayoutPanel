@@ -168,27 +168,22 @@ namespace CBComponents
       if (this.captionStyle == HighlightCaptionStyle.HighlightStyle)
       { // HighlightCaptionStyle.HighlightStyle allways draw
         float _wPen = this.captionLineWidth * 2 + this.captionTextHeight;
-        float _wdpen = _wPen / 2; // _gPen.Width / 2
         using (Brush _gBrush = new LinearGradientBrush(new Point(0, 0), new Point(this.Width, 0), this.captionLineBeginColor, this.captionLineEndColor))
           using (Pen _gPen = new Pen(_gBrush, _wPen))
-            e.Graphics.DrawLine(_gPen, 0, _wdpen, this.Width, _wdpen);
+            e.Graphics.DrawLine(_gPen, 0, _wPen / 2, this.Width, _wPen / 2);
       }
       else if (this.captionLineWidth > 0)
         if (this.captionStyle != HighlightCaptionStyle.NavisionAxaptaStyle)
         { // HighlightCaptionMode.ForeColor | HighlightCaptionMode.SystemColorsHighlight
-          float _wPen = this.captionTextHeight + this.captionLineWidth / 2;
           using (Brush _gradientBrush = new LinearGradientBrush(new Point(0, 0), new Point(this.Width, 0), this.captionLineBeginColor, this.captionLineEndColor))
           using (Pen _gradientPen = new Pen(_gradientBrush, this.captionLineWidth))
-            e.Graphics.DrawLine(_gradientPen, 0, _wPen, this.Width, _wPen);
+            e.Graphics.DrawLine(_gradientPen, 0, this.captionTextHeight + this.captionLineWidth / 2, this.Width, this.captionTextHeight + this.captionLineWidth / 2);
         }
         else if (this.captionTextWidth + 1 < this.Width)
         { // HighlightCaptionMode.NavisionAxapta
-          float _wPen = this.captionTextHeight / 2 + 1;
           using (Brush _gradientBrush = new LinearGradientBrush(new Point(this.captionTextWidth, 0), new Point(this.Width, 0), this.captionLineBeginColor, this.captionLineEndColor))
           using (Pen _gradientPen = new Pen(_gradientBrush, this.captionLineWidth > this.captionTextHeight ? this.captionTextHeight : this.captionLineWidth))
-            e.Graphics.DrawLine(_gradientPen, this.captionTextWidth, _wPen, this.Width, _wPen);
-          //using (Pen _roundPen = new Pen(this.captionGBColor, (this.captionLineWidth > this.captionTextHeight ? this.captionTextHeight : this.captionLineWidth) - 2))
-          //  e.Graphics.DrawLine(_roundPen, this.captionTextWidth - 1, _wPen, this.captionTextWidth, _wPen);
+            e.Graphics.DrawLine(_gradientPen, this.captionTextWidth, this.captionTextHeight / 2 + 1, this.Width, this.captionTextHeight / 2 + 1);
         }
       // draw Text
       if (this.captionTextHeight > 0)
