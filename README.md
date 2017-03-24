@@ -2,10 +2,8 @@
 
 This is WinForms highlighted header control based on TableLayoutPanel
 
-| ![Demonstrative image](img_01.png) | ![Demonstrative image](img_02.png) |
-|:---:|:---:|
-| Visual Studio | Run time |
- 
+![Demonstrative image](img_01.png) 
+
 ## Problem
 
 There are a lot of panels for grouping the controls in WinForms. The best one of them is _TableLayoutPanel_. Unfortunately, this panel does not show the header.
