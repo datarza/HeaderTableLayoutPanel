@@ -10,9 +10,9 @@ I prefer to make inherited panel from _TableLayoutPanel_ with all necessary func
 
 # TableLayoutPanel with highlighted header
 
-This is a WinForms highlighted header control based on TableLayoutPanel
-
 ![Demonstrative image](img_01.png) 
+
+This is a WinForms highlighted header control based on TableLayoutPanel
 
 ## How It Works
 
