@@ -2,15 +2,17 @@
 
 There are a lot of panels for grouping the controls in WinForms. The best one of them is _TableLayoutPanel_, especially for grouping controls, that are using for editing data. Unfortunately, this panel does not show the header. This necessity appears when there are different kinds of editing controls on the same Windows form.
 
-# TableLayoutPanel with highlighted header
-
-This is WinForms highlighted header control based on TableLayoutPanel
-
-![Demonstrative image](img_01.png) 
-
 ## Solution
 
-It can be solved by _GroupBox_ and _TableLayoutPanel_. This solution is easy, but I prefer to make inherited panel from _TableLayoutPanel_.
+It can be solved by _GroupBox_ and _TableLayoutPanel_. This solution is easy, but may look unpleasant. Another possibility is using Label control in first row of _TableLayoutPanel_. This solution may be uncomfortable.
+
+I prefer to make inherited panel from _TableLayoutPanel_ with all necessary functions.
+
+# TableLayoutPanel with highlighted header
+
+This is a WinForms highlighted header control based on TableLayoutPanel
+
+![Demonstrative image](img_01.png) 
 
 ## How It Works
 
