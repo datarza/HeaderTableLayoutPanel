@@ -12,8 +12,6 @@ I prefer to make inherited panel from _TableLayoutPanel_ with all necessary func
 
 ![Demonstrative image](img_01.png) 
 
-This is a WinForms highlighted header control based on TableLayoutPanel
-
 ## How It Works
 
 The _HeaderTableLayoutPanel_ implements the _IsHighlightText_ property and overrides the few properties like _Text_, _DisplayRectangle_ and _SizeFromClientSize_. Also, the _HeaderTableLayoutPanel_ overrides the _OnPaint_ and _OnFontChanged_ methods.
