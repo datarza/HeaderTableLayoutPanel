@@ -10,7 +10,7 @@ I prefer to make inherited panel from _TableLayoutPanel_ with all necessary func
 
 ## How It Works
 
-TableLayoutPanel with highlighted header called _HeaderTableLayoutPanel_ is simple, useful, and cute.
+TableLayoutPanel with highlighted header called _HeaderTableLayoutPanel_ is simple, useful, and cute. This control may show header in different ways:
 
 ![Demonstrative image](img_01.png)
 
