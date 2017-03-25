@@ -21,6 +21,13 @@ The _HeaderTableLayoutPanel_ implements just three properties:
 
 Be aware of _CaptionLineWidth_. If _CaptionStyle = HighlightCaptionStyle.HighlightStyle_, then two lines with _Width = CaptionLineWidth_ will be shown, one will be above the Header and the second one will be below the header. For _CaptionStyle = HighlightCaptionStyle.GroupBoxStyle_ this property does not do anything. 
 
+## How to use it via NuGet
+
+To install _HeaderTableLayoutPanel_, run the following command in the [Package Manager Console](https://www.nuget.org/packages/CBComponents.HeaderTableLayoutPanel):
+```
+PM> Install-Package CBComponents.HeaderTableLayoutPanel 
+```
+
 ### Screens
 
 ![alt tag](Media/img_02.png "")
@@ -28,13 +35,6 @@ Be aware of _CaptionLineWidth_. If _CaptionStyle = HighlightCaptionStyle.Highlig
 ![alt tag](Media/img_03.png "")
 
 ![alt tag](Media/img_04.png "")
-
-## How to use it via NuGet
-
-To install _HeaderTableLayoutPanel_, run the following command in the [Package Manager Console](https://www.nuget.org/packages/CBComponents.HeaderTableLayoutPanel):
-```
-PM> Install-Package CBComponents.HeaderTableLayoutPanel 
-```
 
 ### Please, support this project via PayPal:
 
