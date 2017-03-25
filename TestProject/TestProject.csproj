@@ -56,7 +56,8 @@
   </Choose>
   <ItemGroup>
     <Compile Include="HighlightCaptionStyle\UnitTest.ForeColor.cs" />
-    <Compile Include="UnitTest.Preparation.cs" />
+    <Compile Include="TestObjectsClass.cs" />
+    <Compile Include="UnitTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
