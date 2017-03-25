@@ -36,7 +36,7 @@ namespace CBComponents
     /// </summary>
     public enum HighlightCaptionStyle
     {
-      ForeColor, HighlightColor, HighlightStyle, NavisionAxaptaStyle, GroupBox
+      ForeColor, HighlightColor, HighlightStyle, NavisionAxaptaStyle, GroupBoxStyle
     }
 
     /// <summary>
@@ -139,14 +139,14 @@ namespace CBComponents
       {
         var result = base.DisplayRectangle;
         int resize = 0;
-        if (this.captionTextHeight > 0) resize = this.captionTextHeight + (this.captionStyle == HighlightCaptionStyle.GroupBox ? 4 : 2);
+        if (this.captionTextHeight > 0) resize = this.captionTextHeight + (this.captionStyle == HighlightCaptionStyle.GroupBoxStyle ? 4 : (this.captionStyle == HighlightCaptionStyle.NavisionAxaptaStyle ? 1 : 2));
         if (this.captionStyle == HighlightCaptionStyle.HighlightStyle) resize += this.captionLineWidth * 2;
-        else if (this.captionStyle != HighlightCaptionStyle.NavisionAxaptaStyle) resize += this.captionLineWidth;
+        else if (this.captionStyle == HighlightCaptionStyle.ForeColor || this.captionStyle == HighlightCaptionStyle.HighlightColor) resize += this.captionLineWidth;
         result.Height -= resize;
-        if (this.captionStyle == HighlightCaptionStyle.GroupBox)
+        if (this.captionStyle == HighlightCaptionStyle.GroupBoxStyle)
         {
           result.Width -= 2;
-          result.Offset(1, resize - 4);
+          result.Offset(1, resize - 2);
         }
         else result.Offset(0, resize);
         return result;
@@ -158,10 +158,11 @@ namespace CBComponents
     {
       var result = base.SizeFromClientSize(clientSize);
       int resize = 0;
-      if (this.captionTextHeight > 0) resize = this.captionTextHeight + (this.captionStyle == HighlightCaptionStyle.GroupBox ? 4 : 2);
+      if (this.captionTextHeight > 0) resize = this.captionTextHeight + (this.captionStyle == HighlightCaptionStyle.GroupBoxStyle ? 4 : (this.captionStyle == HighlightCaptionStyle.NavisionAxaptaStyle ? 1 : 2));
       if (this.captionStyle == HighlightCaptionStyle.HighlightStyle) resize += this.captionLineWidth * 2;
-      else if (this.captionStyle != HighlightCaptionStyle.NavisionAxaptaStyle) resize += this.captionLineWidth;
+      else if (this.captionStyle == HighlightCaptionStyle.ForeColor || this.captionStyle == HighlightCaptionStyle.HighlightColor) resize += this.captionLineWidth;
       result.Height += resize;
+      if (this.captionStyle == HighlightCaptionStyle.GroupBoxStyle) result.Width += 4;
       return result;
     }
 
@@ -177,7 +178,7 @@ namespace CBComponents
           using (Pen _gPen = new Pen(_gBrush, _wPen))
             e.Graphics.DrawLine(_gPen, 0, _wPen / 2, this.Width, _wPen / 2);
       }
-      else if (this.captionStyle == HighlightCaptionStyle.GroupBox)
+      else if (this.captionStyle == HighlightCaptionStyle.GroupBoxStyle)
       { // HighlightCaptionStyle.GroupBox draw GroupBox canvas
         GroupBoxRenderer.DrawGroupBox(e.Graphics, this.ClientRectangle, this.captionText, this.Font, this.captionTextColor, this.Enabled ? System.Windows.Forms.VisualStyles.GroupBoxState.Normal : System.Windows.Forms.VisualStyles.GroupBoxState.Disabled);
       }
@@ -195,7 +196,7 @@ namespace CBComponents
             e.Graphics.DrawLine(_gradientPen, this.captionTextWidth, this.captionTextHeight / 2 + 1, this.Width, this.captionTextHeight / 2 + 1);
         }
       // draw Text
-      if (this.captionTextHeight > 0 && this.captionStyle != HighlightCaptionStyle.GroupBox)
+      if (this.captionTextHeight > 0 && this.captionStyle != HighlightCaptionStyle.GroupBoxStyle)
         using (Brush _textBrush = new SolidBrush(this.captionTextColor))
           e.Graphics.DrawString(this.captionText, this.Font, _textBrush, 0, this.captionStyle == HighlightCaptionStyle.HighlightStyle ? this.CaptionLineWidth : 0);
     }
