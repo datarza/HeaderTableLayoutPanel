@@ -19,6 +19,7 @@ using System.Runtime.InteropServices;
 
 namespace CBComponents
 {
+  [ToolboxBitmap(typeof(TableLayoutPanel))]
   public class HeaderTableLayoutPanel : System.Windows.Forms.TableLayoutPanel
   {
     /// <summary>
