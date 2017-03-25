@@ -12,7 +12,7 @@ I prefer to make inherited panel from _TableLayoutPanel_ with all necessary func
 
 TableLayoutPanel with highlighted header called _HeaderTableLayoutPanel_ is simple, useful, and cute. This control may show a header in different ways:
 
-![Demonstrative image](img_01.png)
+![alt tag](Media/img_01.png "")
 
 The _HeaderTableLayoutPanel_ implements just three properties:
 - _CaptionText_ - string property that contains a text for showing. If this property is _string.Empty_ or _null_ then the header will not be shown
@@ -23,11 +23,11 @@ Be aware of _CaptionLineWidth_. If _CaptionStyle = HighlightCaptionStyle.Highlig
 
 ### Screens
 
-![Demonstrative image](img_02.png)
+![alt tag](Media/img_02.png "")
 
-![Demonstrative image](img_03.png)
+![alt tag](Media/img_03.png "")
 
-![Demonstrative image](img_04.png)
+![alt tag](Media/img_04.png "")
 
 ## License
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
