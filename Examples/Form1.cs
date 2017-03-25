@@ -22,7 +22,7 @@ namespace Examples
       var frm = new Form2();
       frm.Show();
       Point location = this.DesktopLocation;
-      location.Offset(this.DesktopBounds.Size.Width + 1, 0);
+      location.Offset(this.DesktopBounds.Size.Width + 2, 0);
       frm.SetDesktopLocation(location.X, location.Y);
     }
   }
