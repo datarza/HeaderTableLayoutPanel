@@ -4,15 +4,15 @@ There are a lot of panels for grouping the controls in WinForms. The best one of
 
 ## Solution
 
-It can be solved by _GroupBox_ and _TableLayoutPanel_. This solution is easy, but may look unpleasant. Another possibility is using Label control in first row of _TableLayoutPanel_. This solution may be uncomfortable.
+It can be solved by _GroupBox_ and _TableLayoutPanel_. This solution is easy, but may look unpleasant. Another possibility is using _Label_ control in first row of _TableLayoutPanel_. This solution may be uncomfortable.
 
 I prefer to make inherited panel from _TableLayoutPanel_ with all necessary functions.
 
-# TableLayoutPanel with highlighted header
-
-![Demonstrative image](img_01.png) 
-
 ## How It Works
+
+TableLayoutPanel with highlighted header called _HeaderTableLayoutPanel_ is simple, useful, and cute.
+
+![Demonstrative image](img_01.png)
 
 The _HeaderTableLayoutPanel_ implements the _IsHighlightText_ property and overrides the few properties like _Text_, _DisplayRectangle_ and _SizeFromClientSize_. Also, the _HeaderTableLayoutPanel_ overrides the _OnPaint_ and _OnFontChanged_ methods.
 
