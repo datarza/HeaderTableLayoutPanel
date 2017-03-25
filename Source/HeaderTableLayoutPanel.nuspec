@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>CBComponents.HeaderTableLayoutPanel</id>
+    <version>$version$</version>
+    <title>HeaderTableLayoutPanel</title>
+    <authors>Radu Martin</authors>
+    <owners>$author$</owners>
+    <licenseUrl>https://creativecommons.org/licenses/by-nc-sa/4.0/</licenseUrl>
+    <projectUrl>https://github.com/CanadianBeaver/HeaderTableLayoutPanel</projectUrl>
+    <!--<iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>-->
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>TableLayoutPanel with highlighted header</description>
+    <!--<releaseNotes>Summary of changes made in this release of the package.</releaseNotes>-->
+    <copyright>Copyright 2017</copyright>
+    <tags>visual-studio csharp winforms winforms-controls library controls panel tablelayout windows layout-engine layouts programming visualisation visual-studio-code databases free</tags>
+  </metadata>
+</package>
