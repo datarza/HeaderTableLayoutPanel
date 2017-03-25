@@ -17,7 +17,7 @@ TableLayoutPanel with highlighted header called _HeaderTableLayoutPanel_ is simp
 The _HeaderTableLayoutPanel_ implements just three properties:
 - _CaptionText_ - string property that contains a text for showing. If this property is _string.Empty_ or _null_ then the header will not be shown
 - _CaptionStyle_ - this is enum (_HighlightCaptionStyle_) property that points a drawing style. It can be: _ForeColor_, _HighlightColor_, _HighlightStyle_, _NavisionAxaptaStyle_, _GroupBoxStyle_ (see the image above)
-- _CaptionLineWidth_ - byte property that points the width of header's line (nothing effect, if _CaptionStyle = HighlightCaptionStyle.GroupBoxStyle_)
+- _CaptionLineWidth_ - byte property that points the width of header's line
 
 Be aware of _CaptionLineWidth_. If _CaptionStyle = HighlightCaptionStyle.HighlightStyle_, then two lines with width=_CaptionLineWidth_ will be shown, one will be above the Header and the second one will be below the header. For _CaptionStyle = HighlightCaptionStyle.GroupBoxStyle_ this property does not do anything. 
 
