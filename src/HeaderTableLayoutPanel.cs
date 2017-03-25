@@ -148,7 +148,8 @@ namespace CBComponents
       {
         var result = base.DisplayRectangle;
         int resize = 0;
-        if (this.captionTextHeight > 0) resize = this.captionTextHeight + (this.captionStyle == HighlightCaptionStyle.GroupBoxStyle ? 4 : (this.captionStyle == HighlightCaptionStyle.NavisionAxaptaStyle ? 1 : 2));
+        if (this.captionTextHeight > 0) resize = this.captionTextHeight + (this.captionStyle == HighlightCaptionStyle.NavisionAxaptaStyle ? 1 : 2);
+        else if (this.captionStyle == HighlightCaptionStyle.GroupBoxStyle) resize += 12;
         if (this.captionStyle == HighlightCaptionStyle.HighlightStyle) resize += this.captionLineWidth * 2;
         else if (this.captionStyle == HighlightCaptionStyle.ForeColor || this.captionStyle == HighlightCaptionStyle.HighlightColor) resize += this.captionLineWidth;
         result.Height -= resize;
@@ -168,6 +169,7 @@ namespace CBComponents
       var result = base.SizeFromClientSize(clientSize);
       int resize = 0;
       if (this.captionTextHeight > 0) resize = this.captionTextHeight + (this.captionStyle == HighlightCaptionStyle.GroupBoxStyle ? 4 : (this.captionStyle == HighlightCaptionStyle.NavisionAxaptaStyle ? 1 : 2));
+      else if (this.captionStyle == HighlightCaptionStyle.GroupBoxStyle) resize += 11;
       if (this.captionStyle == HighlightCaptionStyle.HighlightStyle) resize += this.captionLineWidth * 2;
       else if (this.captionStyle == HighlightCaptionStyle.ForeColor || this.captionStyle == HighlightCaptionStyle.HighlightColor) resize += this.captionLineWidth;
       result.Height += resize;
@@ -189,7 +191,10 @@ namespace CBComponents
       }
       else if (this.captionStyle == HighlightCaptionStyle.GroupBoxStyle)
       { // HighlightCaptionStyle.GroupBox draw GroupBox canvas
-        GroupBoxRenderer.DrawGroupBox(e.Graphics, this.ClientRectangle, this.captionText, this.Font, this.captionTextColor, this.Enabled ? System.Windows.Forms.VisualStyles.GroupBoxState.Normal : System.Windows.Forms.VisualStyles.GroupBoxState.Disabled);
+        string _capText = this.captionText;
+        if (!string.IsNullOrEmpty(_capText)) _capText = _capText.Trim();
+        if (!string.IsNullOrEmpty(_capText)) _capText = string.Format(" {0} ", _capText);
+        GroupBoxRenderer.DrawGroupBox(e.Graphics, this.ClientRectangle, _capText, this.Font, this.captionTextColor, this.Enabled ? System.Windows.Forms.VisualStyles.GroupBoxState.Normal : System.Windows.Forms.VisualStyles.GroupBoxState.Disabled);
       }
       else if (this.captionLineWidth > 0)
         if (this.captionStyle != HighlightCaptionStyle.NavisionAxaptaStyle)
