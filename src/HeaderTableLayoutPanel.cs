@@ -192,8 +192,11 @@ namespace CBComponents
       else if (this.captionStyle == HighlightCaptionStyle.GroupBoxStyle)
       { // HighlightCaptionStyle.GroupBox draw GroupBox canvas
         string _capText = this.captionText;
-        if (!string.IsNullOrEmpty(_capText)) _capText = _capText.Trim();
-        if (!string.IsNullOrEmpty(_capText)) _capText = string.Format(" {0} ", _capText);
+        if (!string.IsNullOrEmpty(_capText))
+        {
+          _capText = _capText.Trim();
+          if (!string.IsNullOrEmpty(_capText)) _capText = string.Format(" {0} ", _capText);
+        }
         GroupBoxRenderer.DrawGroupBox(e.Graphics, this.ClientRectangle, _capText, this.Font, this.captionTextColor, this.Enabled ? System.Windows.Forms.VisualStyles.GroupBoxState.Normal : System.Windows.Forms.VisualStyles.GroupBoxState.Disabled);
       }
       else if (this.captionLineWidth > 0)
