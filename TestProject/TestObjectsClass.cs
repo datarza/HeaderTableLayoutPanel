@@ -26,6 +26,17 @@ namespace TestProject
       this.Form.PerformLayout();
     }
 
+    public void SuspendLayout()
+    {
+      this.Form.SuspendLayout();
+    }
+
+    public void PerformLayout()
+    {
+      this.Form.ResumeLayout(false);
+      this.Form.PerformLayout();
+    }
+
     private void PrepareEditControls()
     {
       if (this.Form == null || this.Panel == null || this.Panel.Parent != this.Form) return;
