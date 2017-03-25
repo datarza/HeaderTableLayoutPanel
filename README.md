@@ -31,7 +31,7 @@ Be aware of _CaptionLineWidth_. If _CaptionStyle = HighlightCaptionStyle.Highlig
 
 ### Please, support this project via PayPal:
 
-[![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YQZ44S5HX5NQL) |
+[![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YQZ44S5HX5NQL)
 
 ### License 
 
