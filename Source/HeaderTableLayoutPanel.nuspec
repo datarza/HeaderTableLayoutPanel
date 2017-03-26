@@ -6,12 +6,12 @@
     <title>HeaderTableLayoutPanel</title>
     <authors>Radu Martin</authors>
     <owners>$author$</owners>
-    <licenseUrl>https://creativecommons.org/licenses/by-nc-sa/4.0/</licenseUrl>
+    <licenseUrl>https://en.wikipedia.org/wiki/MIT_License</licenseUrl>
     <projectUrl>https://github.com/CanadianBeaver/HeaderTableLayoutPanel</projectUrl>
     <!--<iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>-->
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <description>TableLayoutPanel with highlighted header</description>
-    <!--<releaseNotes>Summary of changes made in this release of the package.</releaseNotes>-->
+    <releaseNotes>LICENCE has been changed to MIT.</releaseNotes>
     <copyright>Copyright © Radu Martin, 2017</copyright>
     <tags>visual-studio csharp winforms winforms-controls library controls panel tablelayout windows layout-engine layouts programming visualisation visual-studio-code databases free</tags>
   </metadata>
