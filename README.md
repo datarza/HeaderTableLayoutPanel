@@ -44,6 +44,6 @@ PM> Install-Package CBComponents.HeaderTableLayoutPanel
 
 I would appreciate hearing your opinion on this. Please feel free to contact me by email: [radu.martin@hotmail.com](mailto://radu.martin@hotmail.com)
 
-## Please, support this project via PayPal:
+### Please, support this project via PayPal:
 
 [![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YQZ44S5HX5NQL)
