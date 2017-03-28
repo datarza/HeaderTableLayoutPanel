@@ -10,11 +10,13 @@ using System.Runtime.InteropServices;
 
 //
 // HeaderTableLayoutPanel 
+//
 // This is the WinForms control based on TableLayoutPanel 
 // and can show the highlighted header in different ways
 //
 // Author: Radu Martin (CanadianBeaver)
-// Website: https://github.com/CanadianBeaver/HeaderTableLayoutPanel
+// Email: radu.martin@hotmail.com
+// GitHub: https://github.com/CanadianBeaver/HeaderTableLayoutPanel
 // 
 
 namespace CBComponents

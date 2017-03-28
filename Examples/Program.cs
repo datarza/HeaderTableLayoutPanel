@@ -7,11 +7,7 @@ namespace Examples
   static class Program
   {
     /// <summary>
-    // HeaderTableLayoutPanel Examples
-    // This is the examples of the HeaderTableLayoutPanel WinForms control
-    //
-    // Author: Radu Martin (CanadianBeaver)
-    // Website: https://github.com/CanadianBeaver/HeaderTableLayoutPanel
+    // Examples of the HeaderTableLayoutPanel WinForms control
     /// </summary>
     [STAThread]
     static void Main()
