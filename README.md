@@ -10,7 +10,7 @@ I prefer to make inherited panel from _TableLayoutPanel_ with all necessary func
 
 ## How It Works
 
-TableLayoutPanel with highlighted header called _HeaderTableLayoutPanel_ is simple, useful, and cute. This control may show a header in different ways:
+TableLayoutPanel with highlighted header called _HeaderTableLayoutPanel_ is simple, useful, and cute. This control may show the header in a number of different ways:
 
 ![alt tag](Media/img_01.png "")
 
@@ -20,6 +20,14 @@ The _HeaderTableLayoutPanel_ implements just three properties:
 - _CaptionLineWidth_ - byte property that points the width of header's line (0 - the line will not be shown)
 
 Be aware of _CaptionLineWidth_. If _CaptionStyle = HighlightCaptionStyle.HighlightStyle_, then two lines with _Width = CaptionLineWidth_ will be shown, one will be above the Header and the second one will be below the header. For _CaptionStyle = HighlightCaptionStyle.GroupBoxStyle_ this property does not do anything. 
+
+#### Screens
+
+![alt tag](Media/img_02.png "")
+
+![alt tag](Media/img_03.png "")
+
+![alt tag](Media/img_04.png "")
 
 ## Supported .NET Frameworks
 
@@ -31,14 +39,6 @@ To install _HeaderTableLayoutPanel_, run the following command in the [Package M
 ```
 PM> Install-Package CBComponents.HeaderTableLayoutPanel 
 ```
-
-#### Screens
-
-![alt tag](Media/img_02.png "")
-
-![alt tag](Media/img_03.png "")
-
-![alt tag](Media/img_04.png "")
 
 ## Contacts
 
