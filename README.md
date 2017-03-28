@@ -28,6 +28,10 @@ To install _HeaderTableLayoutPanel_, run the following command in the [Package M
 PM> Install-Package CBComponents.HeaderTableLayoutPanel 
 ```
 
+### Supported Systems
+
+_HeaderTableLayoutPanel_ does not use any special requirements. It can be compiled on any Microsoft .NET Framework (include .NET Framework 3.5 Client Profile).
+
 ### Screens
 
 ![alt tag](Media/img_02.png "")
