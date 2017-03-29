@@ -48,7 +48,7 @@ namespace CBComponents
     /// </summary>
     public enum HighlightCaptionStyle
     {
-      ForeColor, HighlightColor, HighlightStyle, NavisionAxaptaStyle, GroupBoxStyle
+      ForeColor, HighlightColor, ForeStyle, HighlightStyle, NavisionAxaptaStyle, GroupBoxStyle
     }
 
     /// <summary>
@@ -136,7 +136,13 @@ namespace CBComponents
         this.captionLineBeginColor = this.ForeColor;
         this.captionLineEndColor = this.BackColor;
       }
-      else
+      else if (this.captionStyle == HighlightCaptionStyle.ForeStyle)
+      {
+        this.captionTextColor = this.BackColor;
+        this.captionLineBeginColor = this.ForeColor;
+        this.captionLineEndColor = this.BackColor;
+      }
+      else 
       {
         this.captionTextColor = this.captionStyle == HighlightCaptionStyle.HighlightStyle ? SystemColors.HighlightText : SystemColors.Highlight;
         this.captionLineBeginColor = SystemColors.MenuHighlight;
@@ -153,7 +159,7 @@ namespace CBComponents
         int resize = 0;
         if (this.captionTextHeight > 0) resize = this.captionTextHeight + (this.captionStyle == HighlightCaptionStyle.NavisionAxaptaStyle ? 1 : 2);
         else if (this.captionStyle == HighlightCaptionStyle.GroupBoxStyle) resize += 12;
-        if (this.captionStyle == HighlightCaptionStyle.HighlightStyle) resize += this.captionLineWidth * 2;
+        if (this.captionStyle == HighlightCaptionStyle.ForeStyle || this.captionStyle == HighlightCaptionStyle.HighlightStyle) resize += this.captionLineWidth * 2;
         else if (this.captionStyle == HighlightCaptionStyle.ForeColor || this.captionStyle == HighlightCaptionStyle.HighlightColor) resize += this.captionLineWidth;
         result.Height -= resize;
         if (this.captionStyle == HighlightCaptionStyle.GroupBoxStyle)
@@ -173,7 +179,7 @@ namespace CBComponents
       int resize = 0;
       if (this.captionTextHeight > 0) resize = this.captionTextHeight + (this.captionStyle == HighlightCaptionStyle.GroupBoxStyle ? 4 : (this.captionStyle == HighlightCaptionStyle.NavisionAxaptaStyle ? 1 : 2));
       else if (this.captionStyle == HighlightCaptionStyle.GroupBoxStyle) resize += 11;
-      if (this.captionStyle == HighlightCaptionStyle.HighlightStyle) resize += this.captionLineWidth * 2;
+      if (this.captionStyle == HighlightCaptionStyle.ForeStyle || this.captionStyle == HighlightCaptionStyle.HighlightStyle) resize += this.captionLineWidth * 2;
       else if (this.captionStyle == HighlightCaptionStyle.ForeColor || this.captionStyle == HighlightCaptionStyle.HighlightColor) resize += this.captionLineWidth;
       result.Height += resize;
       if (this.captionStyle == HighlightCaptionStyle.GroupBoxStyle) result.Width += 4;
@@ -185,7 +191,7 @@ namespace CBComponents
     {
       base.OnPaint(e);
       // draw gradient
-      if (this.captionStyle == HighlightCaptionStyle.HighlightStyle)
+      if (this.captionStyle == HighlightCaptionStyle.ForeStyle || this.captionStyle == HighlightCaptionStyle.HighlightStyle)
       { // HighlightCaptionStyle.HighlightStyle allways draw
         float _wPen = this.captionLineWidth * 2 + this.captionTextHeight;
         using (Brush _gBrush = new LinearGradientBrush(new Point(0, 0), new Point(this.Width, 0), this.captionLineBeginColor, this.captionLineEndColor))
@@ -204,7 +210,7 @@ namespace CBComponents
       }
       else if (this.captionLineWidth > 0)
         if (this.captionStyle != HighlightCaptionStyle.NavisionAxaptaStyle)
-        { // HighlightCaptionMode.ForeColor | HighlightCaptionMode.SystemColorsHighlight
+        { // HighlightCaptionMode.ForeColor | HighlightCaptionMode.HighlightColor
           using (Brush _gradientBrush = new LinearGradientBrush(new Point(0, 0), new Point(this.Width, 0), this.captionLineBeginColor, this.captionLineEndColor))
           using (Pen _gradientPen = new Pen(_gradientBrush, this.captionLineWidth))
             e.Graphics.DrawLine(_gradientPen, 0, this.captionTextHeight + this.captionLineWidth / 2, this.Width, this.captionTextHeight + this.captionLineWidth / 2);
@@ -218,7 +224,7 @@ namespace CBComponents
       // draw Text
       if (this.captionTextHeight > 0 && this.captionStyle != HighlightCaptionStyle.GroupBoxStyle)
         using (Brush _textBrush = new SolidBrush(this.captionTextColor))
-          e.Graphics.DrawString(this.captionText, this.Font, _textBrush, 0, this.captionStyle == HighlightCaptionStyle.HighlightStyle ? this.CaptionLineWidth : 0);
+          e.Graphics.DrawString(this.captionText, this.Font, _textBrush, 0, this.captionStyle == HighlightCaptionStyle.HighlightStyle || this.captionStyle == HighlightCaptionStyle.ForeStyle ? this.CaptionLineWidth : 0);
     }
 
   }
