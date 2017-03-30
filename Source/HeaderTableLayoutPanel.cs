@@ -164,7 +164,7 @@ namespace CBComponents
           else if (this.captionStyle == HighlightCaptionStyle.ForeStyle || this.captionStyle == HighlightCaptionStyle.HighlightStyle) resize += 1;
           else if (this.captionStyle != HighlightCaptionStyle.GroupBoxStyle) resize += this.captionLineWidth > 0 ? 2 : 1;
         }
-        else if (this.captionStyle == HighlightCaptionStyle.GroupBoxStyle) resize += 12;
+        else if (this.captionStyle == HighlightCaptionStyle.GroupBoxStyle) resize += 10;
         if (this.captionStyle == HighlightCaptionStyle.ForeStyle || this.captionStyle == HighlightCaptionStyle.HighlightStyle) resize += this.captionLineWidth * 2;
         else if (this.captionStyle == HighlightCaptionStyle.ForeColor || this.captionStyle == HighlightCaptionStyle.HighlightColor) resize += this.captionLineWidth;
         result.Height -= resize;
@@ -185,7 +185,7 @@ namespace CBComponents
         else if (this.captionStyle == HighlightCaptionStyle.ForeStyle || this.captionStyle == HighlightCaptionStyle.HighlightStyle) resize += 1;
         else if (this.captionStyle != HighlightCaptionStyle.GroupBoxStyle) resize += this.captionLineWidth > 0 ? 2 : 1;
       }
-      else if (this.captionStyle == HighlightCaptionStyle.GroupBoxStyle) resize += 12;
+      else if (this.captionStyle == HighlightCaptionStyle.GroupBoxStyle) resize += 10;
       if (this.captionStyle == HighlightCaptionStyle.ForeStyle || this.captionStyle == HighlightCaptionStyle.HighlightStyle) resize += this.captionLineWidth * 2;
       else if (this.captionStyle == HighlightCaptionStyle.ForeColor || this.captionStyle == HighlightCaptionStyle.HighlightColor) resize += this.captionLineWidth;
       result.Height += resize;
