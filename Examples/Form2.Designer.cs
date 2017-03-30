@@ -60,11 +60,17 @@
       this.textBox9 = new System.Windows.Forms.TextBox();
       this.textBox10 = new System.Windows.Forms.TextBox();
       this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+      this.toolStrip2 = new System.Windows.Forms.ToolStrip();
+      this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
+      this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
+      this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
+      this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
       this.flowLayoutPanel1.SuspendLayout();
       this.headerTableLayoutPanel1.SuspendLayout();
       this.headerTableLayoutPanel2.SuspendLayout();
       this.headerTableLayoutPanel3.SuspendLayout();
       this.headerTableLayoutPanel4.SuspendLayout();
+      this.toolStrip2.SuspendLayout();
       this.SuspendLayout();
       // 
       // flowLayoutPanel1
@@ -77,10 +83,10 @@
       this.flowLayoutPanel1.Controls.Add(this.headerTableLayoutPanel4);
       this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
       this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-      this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 25);
+      this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 50);
       this.flowLayoutPanel1.Name = "flowLayoutPanel1";
       this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(8);
-      this.flowLayoutPanel1.Size = new System.Drawing.Size(624, 417);
+      this.flowLayoutPanel1.Size = new System.Drawing.Size(624, 392);
       this.flowLayoutPanel1.TabIndex = 4;
       // 
       // headerTableLayoutPanel1
@@ -461,6 +467,42 @@
       this.toolStrip1.Text = "toolStrip2";
       this.toolStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip1_ItemClicked);
       // 
+      // toolStrip2
+      // 
+      this.toolStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripLabel1,
+            this.toolStripTextBox1,
+            this.toolStripLabel2,
+            this.toolStripComboBox1});
+      this.toolStrip2.Location = new System.Drawing.Point(0, 25);
+      this.toolStrip2.Name = "toolStrip2";
+      this.toolStrip2.Size = new System.Drawing.Size(624, 25);
+      this.toolStrip2.TabIndex = 6;
+      this.toolStrip2.Text = "toolStrip2";
+      // 
+      // toolStripLabel2
+      // 
+      this.toolStripLabel2.Name = "toolStripLabel2";
+      this.toolStripLabel2.Size = new System.Drawing.Size(65, 22);
+      this.toolStripLabel2.Text = "Line width:";
+      // 
+      // toolStripLabel1
+      // 
+      this.toolStripLabel1.Name = "toolStripLabel1";
+      this.toolStripLabel1.Size = new System.Drawing.Size(52, 22);
+      this.toolStripLabel1.Text = "Caption:";
+      // 
+      // toolStripComboBox1
+      // 
+      this.toolStripComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+      this.toolStripComboBox1.Name = "toolStripComboBox1";
+      this.toolStripComboBox1.Size = new System.Drawing.Size(75, 25);
+      // 
+      // toolStripTextBox1
+      // 
+      this.toolStripTextBox1.Name = "toolStripTextBox1";
+      this.toolStripTextBox1.Size = new System.Drawing.Size(100, 25);
+      // 
       // Form2
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -469,6 +511,7 @@
       this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
       this.ClientSize = new System.Drawing.Size(624, 442);
       this.Controls.Add(this.flowLayoutPanel1);
+      this.Controls.Add(this.toolStrip2);
       this.Controls.Add(this.toolStrip1);
       this.Name = "Form2";
       this.Text = "Form2";
@@ -482,6 +525,8 @@
       this.headerTableLayoutPanel3.PerformLayout();
       this.headerTableLayoutPanel4.ResumeLayout(false);
       this.headerTableLayoutPanel4.PerformLayout();
+      this.toolStrip2.ResumeLayout(false);
+      this.toolStrip2.PerformLayout();
       this.ResumeLayout(false);
       this.PerformLayout();
 
@@ -521,5 +566,10 @@
     private System.Windows.Forms.TextBox textBox5;
     private System.Windows.Forms.TextBox textBox10;
     private System.Windows.Forms.ToolStrip toolStrip1;
+    private System.Windows.Forms.ToolStrip toolStrip2;
+    private System.Windows.Forms.ToolStripLabel toolStripLabel1;
+    private System.Windows.Forms.ToolStripTextBox toolStripTextBox1;
+    private System.Windows.Forms.ToolStripLabel toolStripLabel2;
+    private System.Windows.Forms.ToolStripComboBox toolStripComboBox1;
   }
 }

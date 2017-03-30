@@ -162,8 +162,9 @@ namespace CBComponents
           resize = this.captionTextHeight;
           if (this.captionStyle == HighlightCaptionStyle.NavisionAxaptaStyle) resize += 1;
           else if (this.captionStyle == HighlightCaptionStyle.ForeStyle || this.captionStyle == HighlightCaptionStyle.HighlightStyle) resize += 1;
-          else if (this.captionStyle != HighlightCaptionStyle.GroupBoxStyle) resize += 2;
+          else if (this.captionStyle != HighlightCaptionStyle.GroupBoxStyle) resize += this.captionLineWidth > 0 ? 2 : 1;
         }
+        else if (this.captionStyle == HighlightCaptionStyle.GroupBoxStyle) resize += 12;
         if (this.captionStyle == HighlightCaptionStyle.ForeStyle || this.captionStyle == HighlightCaptionStyle.HighlightStyle) resize += this.captionLineWidth * 2;
         else if (this.captionStyle == HighlightCaptionStyle.ForeColor || this.captionStyle == HighlightCaptionStyle.HighlightColor) resize += this.captionLineWidth;
         result.Height -= resize;
@@ -182,8 +183,9 @@ namespace CBComponents
         resize = this.captionTextHeight;
         if (this.captionStyle == HighlightCaptionStyle.NavisionAxaptaStyle) resize += 1;
         else if (this.captionStyle == HighlightCaptionStyle.ForeStyle || this.captionStyle == HighlightCaptionStyle.HighlightStyle) resize += 1;
-        else if (this.captionStyle != HighlightCaptionStyle.GroupBoxStyle) resize += 2;
+        else if (this.captionStyle != HighlightCaptionStyle.GroupBoxStyle) resize += this.captionLineWidth > 0 ? 2 : 1;
       }
+      else if (this.captionStyle == HighlightCaptionStyle.GroupBoxStyle) resize += 12;
       if (this.captionStyle == HighlightCaptionStyle.ForeStyle || this.captionStyle == HighlightCaptionStyle.HighlightStyle) resize += this.captionLineWidth * 2;
       else if (this.captionStyle == HighlightCaptionStyle.ForeColor || this.captionStyle == HighlightCaptionStyle.HighlightColor) resize += this.captionLineWidth;
       result.Height += resize;
@@ -198,9 +200,10 @@ namespace CBComponents
       if (this.captionStyle == HighlightCaptionStyle.ForeStyle || this.captionStyle == HighlightCaptionStyle.HighlightStyle)
       { // HighlightCaptionStyle.HighlightStyle allways draw
         float _wPen = this.captionLineWidth * 2 + this.captionTextHeight;
-        using (Brush _gBrush = new LinearGradientBrush(new Point(0, 0), new Point(this.Width, 0), this.captionLineBeginColor, this.captionLineEndColor))
-          using (Pen _gPen = new Pen(_gBrush, _wPen))
-            e.Graphics.DrawLine(_gPen, 0, _wPen / 2, this.Width, _wPen / 2);
+        if (_wPen > 0)
+          using (Brush _gBrush = new LinearGradientBrush(new Point(0, 0), new Point(this.Width, 0), this.captionLineBeginColor, this.captionLineEndColor))
+            using (Pen _gPen = new Pen(_gBrush, _wPen))
+              e.Graphics.DrawLine(_gPen, 0, _wPen / 2, this.Width, _wPen / 2);
       }
       else if (this.captionStyle == HighlightCaptionStyle.GroupBoxStyle)
       { // HighlightCaptionStyle.GroupBox draw GroupBox canvas
