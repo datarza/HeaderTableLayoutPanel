@@ -97,7 +97,6 @@
       this.headerTableLayoutPanel1.Controls.Add(this.label2, 0, 1);
       this.headerTableLayoutPanel1.Controls.Add(this.comboBox1, 1, 1);
       this.headerTableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
-      this.headerTableLayoutPanel1.MinimumSize = new System.Drawing.Size(210, 0);
       this.headerTableLayoutPanel1.Name = "headerTableLayoutPanel1";
       this.headerTableLayoutPanel1.RowCount = 2;
       this.headerTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
@@ -161,14 +160,13 @@
       this.headerTableLayoutPanel2.Controls.Add(this.label4, 0, 1);
       this.headerTableLayoutPanel2.Controls.Add(this.comboBox2, 1, 1);
       this.headerTableLayoutPanel2.Location = new System.Drawing.Point(3, 79);
-      this.headerTableLayoutPanel2.MinimumSize = new System.Drawing.Size(210, 0);
       this.headerTableLayoutPanel2.Name = "headerTableLayoutPanel2";
       this.headerTableLayoutPanel2.RowCount = 2;
       this.headerTableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
       this.headerTableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
       this.headerTableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
       this.headerTableLayoutPanel2.Size = new System.Drawing.Size(237, 70);
-      this.headerTableLayoutPanel2.TabIndex = 2;
+      this.headerTableLayoutPanel2.TabIndex = 1;
       // 
       // label3
       // 
@@ -225,14 +223,13 @@
       this.headerTableLayoutPanel4.Controls.Add(this.label6, 0, 1);
       this.headerTableLayoutPanel4.Controls.Add(this.comboBox3, 1, 1);
       this.headerTableLayoutPanel4.Location = new System.Drawing.Point(246, 3);
-      this.headerTableLayoutPanel4.MinimumSize = new System.Drawing.Size(210, 0);
       this.headerTableLayoutPanel4.Name = "headerTableLayoutPanel4";
       this.headerTableLayoutPanel4.RowCount = 2;
       this.headerTableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle());
       this.headerTableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle());
       this.headerTableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
       this.headerTableLayoutPanel4.Size = new System.Drawing.Size(237, 72);
-      this.headerTableLayoutPanel4.TabIndex = 4;
+      this.headerTableLayoutPanel4.TabIndex = 3;
       // 
       // label5
       // 
@@ -289,14 +286,13 @@
       this.headerTableLayoutPanel5.Controls.Add(this.label8, 0, 1);
       this.headerTableLayoutPanel5.Controls.Add(this.comboBox4, 1, 1);
       this.headerTableLayoutPanel5.Location = new System.Drawing.Point(246, 81);
-      this.headerTableLayoutPanel5.MinimumSize = new System.Drawing.Size(210, 0);
       this.headerTableLayoutPanel5.Name = "headerTableLayoutPanel5";
       this.headerTableLayoutPanel5.RowCount = 2;
       this.headerTableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle());
       this.headerTableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle());
       this.headerTableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
       this.headerTableLayoutPanel5.Size = new System.Drawing.Size(237, 72);
-      this.headerTableLayoutPanel5.TabIndex = 3;
+      this.headerTableLayoutPanel5.TabIndex = 4;
       // 
       // label7
       // 
@@ -354,14 +350,13 @@
       this.headerTableLayoutPanel3.Controls.Add(this.comboBox5, 1, 1);
       this.flowLayoutPanel1.SetFlowBreak(this.headerTableLayoutPanel3, true);
       this.headerTableLayoutPanel3.Location = new System.Drawing.Point(3, 155);
-      this.headerTableLayoutPanel3.MinimumSize = new System.Drawing.Size(210, 0);
       this.headerTableLayoutPanel3.Name = "headerTableLayoutPanel3";
       this.headerTableLayoutPanel3.RowCount = 2;
       this.headerTableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle());
       this.headerTableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle());
       this.headerTableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
       this.headerTableLayoutPanel3.Size = new System.Drawing.Size(233, 67);
-      this.headerTableLayoutPanel3.TabIndex = 4;
+      this.headerTableLayoutPanel3.TabIndex = 2;
       // 
       // label9
       // 
@@ -418,7 +413,6 @@
       this.headerTableLayoutPanel6.Controls.Add(this.label12, 0, 1);
       this.headerTableLayoutPanel6.Controls.Add(this.comboBox6, 1, 1);
       this.headerTableLayoutPanel6.Location = new System.Drawing.Point(246, 159);
-      this.headerTableLayoutPanel6.MinimumSize = new System.Drawing.Size(210, 0);
       this.headerTableLayoutPanel6.Name = "headerTableLayoutPanel6";
       this.headerTableLayoutPanel6.RowCount = 2;
       this.headerTableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle());

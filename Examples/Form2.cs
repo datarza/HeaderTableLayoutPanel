@@ -30,14 +30,14 @@ namespace Examples
       if (e.ClickedItem.Tag is HeaderTableLayoutPanel.HighlightCaptionStyle)
       {
         var _style = (HeaderTableLayoutPanel.HighlightCaptionStyle)e.ClickedItem.Tag;
-        foreach (Control _panel in this.flowLayoutPanel1.Controls)
-          if (_panel is HeaderTableLayoutPanel)
-            ((HeaderTableLayoutPanel)_panel).CaptionStyle = _style;
+        foreach (HeaderTableLayoutPanel _panel in this.flowLayoutPanel1.Controls)
+        {
+          _panel.CaptionStyle = _style;
+          _panel.PerformLayout();
+        }
+        foreach (ToolStripButton _button in this.toolStrip1.Items)
+          _button.Checked = _button == e.ClickedItem;
       }
-      foreach (ToolStripItem _button in this.toolStrip1.Items)
-        if (_button is ToolStripButton)
-          ((ToolStripButton)_button).Checked = false;
-      ((ToolStripButton)e.ClickedItem).Checked = true;
     }
   }
 }
