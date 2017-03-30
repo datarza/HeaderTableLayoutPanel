@@ -68,5 +68,6 @@ namespace Examples
           _button.Checked = _button == e.ClickedItem;
       }
     }
+    
   }
 }

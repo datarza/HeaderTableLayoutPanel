@@ -61,10 +61,10 @@
       this.textBox10 = new System.Windows.Forms.TextBox();
       this.toolStrip1 = new System.Windows.Forms.ToolStrip();
       this.toolStrip2 = new System.Windows.Forms.ToolStrip();
-      this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
       this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
-      this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
       this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
+      this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
+      this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
       this.flowLayoutPanel1.SuspendLayout();
       this.headerTableLayoutPanel1.SuspendLayout();
       this.headerTableLayoutPanel2.SuspendLayout();
@@ -480,28 +480,28 @@
       this.toolStrip2.TabIndex = 6;
       this.toolStrip2.Text = "toolStrip2";
       // 
-      // toolStripLabel2
-      // 
-      this.toolStripLabel2.Name = "toolStripLabel2";
-      this.toolStripLabel2.Size = new System.Drawing.Size(65, 22);
-      this.toolStripLabel2.Text = "Line width:";
-      // 
       // toolStripLabel1
       // 
       this.toolStripLabel1.Name = "toolStripLabel1";
       this.toolStripLabel1.Size = new System.Drawing.Size(52, 22);
       this.toolStripLabel1.Text = "Caption:";
       // 
+      // toolStripTextBox1
+      // 
+      this.toolStripTextBox1.Name = "toolStripTextBox1";
+      this.toolStripTextBox1.Size = new System.Drawing.Size(100, 25);
+      // 
+      // toolStripLabel2
+      // 
+      this.toolStripLabel2.Name = "toolStripLabel2";
+      this.toolStripLabel2.Size = new System.Drawing.Size(65, 22);
+      this.toolStripLabel2.Text = "Line width:";
+      // 
       // toolStripComboBox1
       // 
       this.toolStripComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
       this.toolStripComboBox1.Name = "toolStripComboBox1";
       this.toolStripComboBox1.Size = new System.Drawing.Size(75, 25);
-      // 
-      // toolStripTextBox1
-      // 
-      this.toolStripTextBox1.Name = "toolStripTextBox1";
-      this.toolStripTextBox1.Size = new System.Drawing.Size(100, 25);
       // 
       // Form2
       // 

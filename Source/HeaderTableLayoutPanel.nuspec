@@ -11,7 +11,7 @@
     <!--<iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>-->
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <description>TableLayoutPanel with highlighted header</description>
-    <releaseNotes>LICENCE has been changed to MIT.</releaseNotes>
+    <releaseNotes>New header visualization (HighlightCaptionStyle.ForeStyle) has been added. Also, a few bugs have been corrected.</releaseNotes>
     <copyright>Copyright © Radu Martin, 2017</copyright>
     <tags>visual-studio csharp winforms winforms-controls library controls panel tablelayout windows layout-engine layouts programming visualisation visual-studio-code databases free</tags>
   </metadata>
