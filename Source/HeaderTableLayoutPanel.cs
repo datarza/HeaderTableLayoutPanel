@@ -81,7 +81,7 @@ namespace CBComponents
       {
         if (this.captionLineWidth != value)
         {
-          this.captionLineWidth = value; // value > (byte)22 ? (byte)22 : value;
+          this.captionLineWidth = value;
           this.CalculateCaptionParams();
           Invalidate();
         }
@@ -157,17 +157,17 @@ namespace CBComponents
       {
         var result = base.DisplayRectangle;
         int resize = 0;
-        if (this.captionTextHeight > 0) resize = this.captionTextHeight + (this.captionStyle == HighlightCaptionStyle.NavisionAxaptaStyle ? 1 : 2);
-        else if (this.captionStyle == HighlightCaptionStyle.GroupBoxStyle) resize += 12;
+        if (this.captionTextHeight > 0)
+        {
+          resize = this.captionTextHeight;
+          if (this.captionStyle == HighlightCaptionStyle.NavisionAxaptaStyle) resize += 1;
+          else if (this.captionStyle == HighlightCaptionStyle.ForeStyle || this.captionStyle == HighlightCaptionStyle.HighlightStyle) resize += 1;
+          else if (this.captionStyle != HighlightCaptionStyle.GroupBoxStyle) resize += 2;
+        }
         if (this.captionStyle == HighlightCaptionStyle.ForeStyle || this.captionStyle == HighlightCaptionStyle.HighlightStyle) resize += this.captionLineWidth * 2;
         else if (this.captionStyle == HighlightCaptionStyle.ForeColor || this.captionStyle == HighlightCaptionStyle.HighlightColor) resize += this.captionLineWidth;
         result.Height -= resize;
-        if (this.captionStyle == HighlightCaptionStyle.GroupBoxStyle)
-        {
-          result.Width -= 2;
-          result.Offset(1, resize - 2);
-        }
-        else result.Offset(0, resize);
+        result.Offset(0, resize);
         return result;
       }
     }
@@ -177,12 +177,16 @@ namespace CBComponents
     {
       var result = base.SizeFromClientSize(clientSize);
       int resize = 0;
-      if (this.captionTextHeight > 0) resize = this.captionTextHeight + (this.captionStyle == HighlightCaptionStyle.GroupBoxStyle ? 4 : (this.captionStyle == HighlightCaptionStyle.NavisionAxaptaStyle ? 1 : 2));
-      else if (this.captionStyle == HighlightCaptionStyle.GroupBoxStyle) resize += 11;
+      if (this.captionTextHeight > 0)
+      {
+        resize = this.captionTextHeight;
+        if (this.captionStyle == HighlightCaptionStyle.NavisionAxaptaStyle) resize += 1;
+        else if (this.captionStyle == HighlightCaptionStyle.ForeStyle || this.captionStyle == HighlightCaptionStyle.HighlightStyle) resize += 1;
+        else if (this.captionStyle != HighlightCaptionStyle.GroupBoxStyle) resize += 2;
+      }
       if (this.captionStyle == HighlightCaptionStyle.ForeStyle || this.captionStyle == HighlightCaptionStyle.HighlightStyle) resize += this.captionLineWidth * 2;
       else if (this.captionStyle == HighlightCaptionStyle.ForeColor || this.captionStyle == HighlightCaptionStyle.HighlightColor) resize += this.captionLineWidth;
       result.Height += resize;
-      if (this.captionStyle == HighlightCaptionStyle.GroupBoxStyle) result.Width += 4;
       return result;
     }
 
