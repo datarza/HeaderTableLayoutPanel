@@ -8,7 +8,7 @@ It can be solved by _GroupBox_ and _TableLayoutPanel_. This solution is easy, bu
 
 I prefer to make inherited panel from _TableLayoutPanel_ with all necessary functions.
 
-## How It Works
+## How It works
 
 TableLayoutPanel with highlighted header called _HeaderTableLayoutPanel_ is simple, useful, and cute. This control may show the header in a number of different ways:
 
