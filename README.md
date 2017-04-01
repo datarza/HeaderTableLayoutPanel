@@ -37,9 +37,9 @@ using CBComponents;
 ...
 var headerTableLayoutPanel = new HeaderTableLayoutPanel()
 {
-  CaptionText = "Personal",
-  CaptionLineWidth = 2,
-  CaptionStyle = HeaderTableLayoutPanel.HighlightCaptionStyle.NavisionAxaptaStyle
+  CaptionText = "Prefered text for header",
+  CaptionStyle = HeaderTableLayoutPanel.HighlightCaptionStyle.NavisionAxaptaStyle,
+  CaptionLineWidth = 2  
 };
 this.Controls.Add(headerTableLayoutPanel1);
 ```
