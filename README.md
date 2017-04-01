@@ -37,7 +37,7 @@ using CBComponents;
 ...
 var headerTableLayoutPanel = new HeaderTableLayoutPanel()
 {
-  CaptionText = "Prefered text for header",
+  CaptionText = "Preferred text for header",
   CaptionStyle = HeaderTableLayoutPanel.HighlightCaptionStyle.NavisionAxaptaStyle,
   CaptionLineWidth = 2  
 };
@@ -47,7 +47,7 @@ To install _HeaderTableLayoutPanel_, run the following command in the [Package M
 ```
 PM> Install-Package CBComponents.HeaderTableLayoutPanel 
 ```
-Alternative option: [download compiled librady and examples](https://github.com/CanadianBeaver/HeaderTableLayoutPanel/raw/master/Build/CBComponents.HeaderTableLayoutPanel.zip).
+Alternative option: [download compiled library and examples](https://github.com/CanadianBeaver/HeaderTableLayoutPanel/raw/master/Build/CBComponents.HeaderTableLayoutPanel.zip).
 
 ## Supported .NET Frameworks
 
