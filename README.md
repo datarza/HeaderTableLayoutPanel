@@ -33,12 +33,25 @@ Be aware of _CaptionLineWidth_. If _CaptionStyle = HighlightCaptionStyle.Highlig
 
 _HeaderTableLayoutPanel_ does not use any special requirements. It can be compiled on any Microsoft .NET Framework (include .NET Framework 3.5 Client Profile).
 
-## How to use it via NuGet
+## How to use it
 
+The following example explains the procedure to create a new HeaderTableLayoutPanel:
+```
+using CBComponents;
+...
+var headerTableLayoutPanel = new CBComponents.HeaderTableLayoutPanel()
+{
+  CaptionText = "Personal",
+  CaptionLineWidth = 2,
+  CaptionStyle = HeaderTableLayoutPanel.HighlightCaptionStyle.NavisionAxaptaStyle
+};
+this.Controls.Add(headerTableLayoutPanel1);
+```
 To install _HeaderTableLayoutPanel_, run the following command in the [Package Manager Console](https://www.nuget.org/packages/CBComponents.HeaderTableLayoutPanel):
 ```
 PM> Install-Package CBComponents.HeaderTableLayoutPanel 
 ```
+Alternative option: [download compiled librady and examples](https://github.com/CanadianBeaver/HeaderTableLayoutPanel/raw/master/Build/CBComponents.HeaderTableLayoutPanel.zip).
 
 ## Contacts
 
