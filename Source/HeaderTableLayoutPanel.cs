@@ -192,7 +192,6 @@ namespace CBComponents
       return result;
     }
 
-    // drawing header
     protected override void OnPaint(PaintEventArgs e)
     {
       base.OnPaint(e);
