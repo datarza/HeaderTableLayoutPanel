@@ -29,10 +29,6 @@ Be aware of _CaptionLineWidth_. If _CaptionStyle = HighlightCaptionStyle.Highlig
 
 ![alt tag](Media/img_04.png "")
 
-## Supported .NET Frameworks
-
-_HeaderTableLayoutPanel_ does not use any special requirements. It can be compiled on any Microsoft .NET Framework (include .NET Framework 3.5 Client Profile).
-
 ## How to use it
 
 The following example explains the procedure to create a new HeaderTableLayoutPanel:
@@ -52,6 +48,10 @@ To install _HeaderTableLayoutPanel_, run the following command in the [Package M
 PM> Install-Package CBComponents.HeaderTableLayoutPanel 
 ```
 Alternative option: [download compiled librady and examples](https://github.com/CanadianBeaver/HeaderTableLayoutPanel/raw/master/Build/CBComponents.HeaderTableLayoutPanel.zip).
+
+## Supported .NET Frameworks
+
+_HeaderTableLayoutPanel_ does not use any special requirements. It can be compiled on any Microsoft .NET Framework (include .NET Framework 3.5 Client Profile).
 
 ## Contacts
 
