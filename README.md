@@ -35,7 +35,7 @@ The following example explains the procedure to create a new HeaderTableLayoutPa
 ```
 using CBComponents;
 ...
-var headerTableLayoutPanel = new CBComponents.HeaderTableLayoutPanel()
+var headerTableLayoutPanel = new HeaderTableLayoutPanel()
 {
   CaptionText = "Personal",
   CaptionLineWidth = 2,
