@@ -18,12 +18,13 @@ namespace Examples
 
     private void Form1_Load(object sender, EventArgs e)
     {
-      this.SetDesktopLocation(this.DesktopLocation.X - this.Width, this.DesktopLocation.Y);
-      var frm = new Form2();
-      frm.Show();
+      // Showing second form nearby this form
+      this.SetDesktopLocation(this.Width / 2, this.DesktopLocation.Y / 2);
+      var _frm2 = new Form2();
+      _frm2.Show();
       Point location = this.DesktopLocation;
       location.Offset(this.DesktopBounds.Size.Width + 2, 0);
-      frm.SetDesktopLocation(location.X, location.Y);
+      _frm2.SetDesktopLocation(location.X, location.Y);
     }
   }
 }
