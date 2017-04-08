@@ -51,11 +51,11 @@ Alternative option: [download compiled library and examples](https://github.com/
 
 ## Supported .NET Frameworks
 
-_HeaderTableLayoutPanel_ inherits from _TableLayoutPanel_, which was implemented in Microsoft .NET Framework 3.5. In general _HeaderTableLayoutPanel_ does not use any special requirements. It can be compiled on any Microsoft .NET Framework platform (including the .NET Framework 3.5 client profile).
+_HeaderTableLayoutPanel_ inherits from [_TableLayoutPanel_](https://msdn.microsoft.com/library/system.windows.forms.tablelayoutpanel), which was implemented in Microsoft .NET Framework 3.5. In general _HeaderTableLayoutPanel_ does not use any special requirements. It can be compiled on any Microsoft .NET Framework platform (including the .NET Framework 3.5 client profile).
 
 ## Contacts
 
-I would appreciate hearing your opinion on this. Please feel free to contact me by email: [radu.martin@hotmail.com](mailto://radu.martin@hotmail.com)
+I would appreciate hearing your opinion on this. If you have any questions, please feel free to contact me by email: [radu.martin@hotmail.com](mailto://radu.martin@hotmail.com)
 
 ##### Please, support the author
 
