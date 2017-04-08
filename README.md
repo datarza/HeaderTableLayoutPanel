@@ -51,7 +51,7 @@ Alternative option: [download compiled library and examples](https://github.com/
 
 ## Supported .NET Frameworks
 
-_HeaderTableLayoutPanel_ does not use any special requirements. It can be compiled on any Microsoft .NET Framework (include .NET Framework 3.5 Client Profile).
+_HeaderTableLayoutPanel_ inherits from _TableLayoutPanel_, which was implemented in Microsoft .NET Framework 3.5. In general _HeaderTableLayoutPanel_ does not use any special requirements. It can be compiled on any Microsoft .NET Framework platform (including the .NET Framework 3.5 client profile).
 
 ## Contacts
 
