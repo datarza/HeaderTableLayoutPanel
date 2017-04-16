@@ -1,5 +1,3 @@
-[![NuGet](https://img.shields.io/nuget/v/Nuget.Core.svg)](https://www.nuget.org/packages/CBComponents.HeaderTableLayoutPanel/)
-
 # HeaderTableLayoutPanel
 
 HeaderTableLayoutPanel is a WinForms control inherited from TableLayoutPanel and provides highlighted header.
